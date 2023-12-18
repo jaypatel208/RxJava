@@ -29,7 +29,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 }
@@ -47,5 +47,16 @@ dependencies {
     implementation("io.reactivex.rxjava3:rxjava:3.1.8")
 
     //RxAndroid dependency
-    implementation ("io.reactivex.rxjava3:rxandroid:3.0.2")
+    implementation("io.reactivex.rxjava3:rxandroid:3.0.2")
+
+    //RxBinding
+    implementation("com.jakewharton.rxbinding4:rxbinding:4.0.0")
+
+    //Retrofit dependencies
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.retrofit2:adapter-rxjava3:2.9.0")
+
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 }
